@@ -58,3 +58,25 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
   .projects-section{padding:78px 20px 72px}.projects-intro{display:block;margin-bottom:48px}.projects-intro .eyebrow{margin-bottom:22px}.projects-intro h2{font-size:42px;margin-bottom:24px}.projects-intro>p:last-child{font-size:15px}.project-feature,.project-row{display:block;margin-bottom:72px;padding-top:20px;padding-bottom:0}.project-copy{position:static;padding:0;margin-bottom:28px}.project-index{margin-bottom:26px}.project-copy h3{font-size:31px}.project-copy>p:last-child{font-size:15px}.project-gallery,.project-gallery-ana{display:flex;align-items:flex-start;gap:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-padding-inline:20px;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px 12px;scrollbar-width:none}.project-gallery::-webkit-scrollbar{display:none}.project-media,.project-media-main,.project-gallery-ana .project-media:nth-child(2){flex:0 0 84vw;max-width:360px;aspect-ratio:4/5;scroll-snap-align:center;grid-column:auto;grid-row:auto}.project-video{flex:0 0 88vw;max-width:420px;aspect-ratio:16/9;scroll-snap-align:center;grid-column:auto;align-self:flex-start}.project-video video{width:100%;height:100%;aspect-ratio:16/9;object-fit:contain}.project-media img,.project-media-main img,.project-gallery-ana .project-media:nth-child(2) img,.project-gallery-ana .project-media:nth-child(n+3) img{min-height:0;max-height:none;height:100%}.project-media:after{opacity:1;transform:none;width:34px;height:34px}.projects-hint{text-align:left;font-size:10px;margin-top:-34px}.project-lightbox{width:100vw;height:100dvh}.project-lightbox figcaption{padding:13px 60px 18px 16px}.project-lightbox-close{top:10px;right:10px}
   footer{align-items:flex-start!important}.footer-links{width:100%;justify-content:space-between;flex-wrap:wrap}
 }
+
+/* Credenciamento bancário (hero) */
+.bank-credential{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:6px 16px;margin:6px 0 26px;padding:16px 20px;max-width:680px;background:rgba(246,201,0,.07);border:1px solid rgba(246,201,0,.35);border-left:4px solid #f6c900}
+.bank-credential-seal{grid-row:span 2;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f6c900;color:#11110f;font:800 20px/1 Manrope,sans-serif}
+.bank-credential p{margin:0;color:#d8d8d1;font-size:15px;line-height:1.4}
+.bank-credential p strong{color:#fff}
+.bank-credential ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.bank-credential li{font:700 12px/1 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#f6c900;border:1px solid rgba(246,201,0,.45);padding:7px 10px}
+
+/* Destaque de projetos e reformas (card lateral) */
+.scope-reforms{display:grid;gap:6px;margin-top:4px;padding:18px 20px;background:#f6c900;color:#11110f;text-decoration:none;transition:transform .2s}
+.scope-reforms:hover{transform:translateY(-2px)}
+.scope-reforms .eyebrow.gold{margin:0;color:#11110f;opacity:.7;letter-spacing:.18em;font-size:11px}
+.scope-reforms strong{font:800 22px/1.1 Manrope,sans-serif;letter-spacing:-.02em}
+.scope-reforms small{font-size:14px;line-height:1.5;color:#2a2a24}
+
+@media(max-width:620px){
+  .bank-credential{padding:14px 16px;gap:6px 12px}
+  .bank-credential-seal{width:34px;height:34px;font-size:16px}
+  .bank-credential p{font-size:14px}
+  .bank-credential li{font-size:11px}
+}
